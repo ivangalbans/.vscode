@@ -10,8 +10,6 @@ bradlc.vscode-tailwindcss
 docker.docker
 eamodio.gitlens
 esbenp.prettier-vscode
-github.copilot
-github.copilot-chat
 gruntfuggly.todo-tree
 haphazarddev.oil-code
 hbenl.vscode-mocha-test-adapter
@@ -33,6 +31,11 @@ ms-ossdata.vscode-pgsql
 ms-vscode-remote.remote-containers
 ms-vscode-remote.remote-ssh
 ms-vscode-remote.remote-ssh-edit
+ms-vscode.cmake-tools
+ms-vscode.cpp-devtools
+ms-vscode.cpptools
+ms-vscode.cpptools-extension-pack
+ms-vscode.cpptools-themes
 ms-vscode.makefile-tools
 ms-vscode.remote-explorer
 ms-vscode.test-adapter-converter
