@@ -96,6 +96,7 @@
     "editor.cursorSmoothCaretAnimation": "on",
     "editor.defaultFormatter": "esbenp.prettier-vscode",
     "editor.fontFamily": "FiraCode Nerd Font, Menlo, Monaco, 'Courier New', monospace",
+    "editor.formatOnSave": true,
     "editor.glyphMargin": false,
     "editor.guides.indentation": false,
     "editor.hideCursorInOverviewRuler": true,
@@ -230,9 +231,9 @@
     ],
     "prettier.enableDebugLogs": true,
     "projectManager.git.baseFolders": [
-        "~/Work"
+        "~/dev"
     ],
-    "projectManager.projectsLocation": "~/Work",
+    "projectManager.projectsLocation": "~/dev",
     "projectManager.sortList": "Recent",
     "redhat.telemetry.enabled": false,
     "security.workspace.trust.untrustedFiles": "open",
@@ -298,6 +299,55 @@
                 }
             ]
         },
+        {
+            "before": [
+                "leader",
+                "p",
+                "r"
+            ],
+            "commands": [
+                {
+                    "command": "workbench.action.openRecent"
+                }
+            ]
+        },
+        // file
+        {
+            "before": [
+                "leader",
+                "f",
+                "f"
+            ],
+            "commands": [
+                {
+                    "command": "workbench.action.quickOpen"
+                }
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "f",
+                "s"
+            ],
+            "commands": [
+                {
+                    "command": "workbench.action.files.save"
+                }
+            ]
+        },
+        {
+            "before": [
+                "leader",
+                "f",
+                "r"
+            ],
+            "commands": [
+                {
+                    "command": "workbench.action.openRecent"
+                }
+            ]
+        },
         // windows
         {
             "before": [
@@ -327,7 +377,7 @@
             "before": [
                 "leader",
                 "w",
-                "q"
+                "d"
             ],
             "commands": [
                 {
@@ -575,8 +625,19 @@
         // calva
         {
             "before": [
-                "leader",
-                "m",
+                ",",
+                "'"
+            ],
+            "commands": [
+                {
+                    "command": "calva.jackIn"
+                }
+            ],
+            "when": "workspaceFolderCount > 0"
+        },
+        {
+            "before": [
+                ",",
                 "c"
             ],
             "commands": [
@@ -599,10 +660,10 @@
             ],
             "when": "calva:connected"
         },
+        // clojure evaluate
         {
             "before": [
-                "leader",
-                "m",
+                ",",
                 "e",
                 "b"
             ],
@@ -615,8 +676,7 @@
         },
         {
             "before": [
-                "leader",
-                "m",
+                ",",
                 "e",
                 "d"
             ],
@@ -629,10 +689,9 @@
         },
         {
             "before": [
-                "leader",
-                "m",
+                ",",
                 "e",
-                "e"
+                "r"
             ],
             "commands": [
                 {
@@ -643,8 +702,7 @@
         },
         {
             "before": [
-                "leader",
-                "m",
+                ",",
                 "e",
                 "E"
             ],
@@ -657,8 +715,7 @@
         },
         {
             "before": [
-                "leader",
-                "m",
+                ",",
                 "e",
                 "c"
             ],
@@ -671,8 +728,7 @@
         },
         {
             "before": [
-                "leader",
-                "m",
+                ",",
                 "e",
                 "t"
             ],
@@ -685,8 +741,7 @@
         },
         {
             "before": [
-                "leader",
-                "m",
+                ",",
                 "p",
                 "P"
             ],
@@ -699,8 +754,7 @@
         },
         {
             "before": [
-                "leader",
-                "m",
+                ",",
                 "r",
                 "r"
             ],
@@ -711,10 +765,10 @@
             ],
             "when": "calva:connected"
         },
+        // clojure testing
         {
             "before": [
-                "leader",
-                "m",
+                ",",
                 "t",
                 "p"
             ],
@@ -727,8 +781,7 @@
         },
         {
             "before": [
-                "leader",
-                "m",
+                ",",
                 "t",
                 "n"
             ],
@@ -741,22 +794,7 @@
         },
         {
             "before": [
-                "leader",
-                "m",
-                "t",
-                "n"
-            ],
-            "commands": [
-                {
-                    "command": "calva.runNamespaceTests"
-                }
-            ],
-            "when": "calva:connected"
-        },
-        {
-            "before": [
-                "leader",
-                "m",
+                ",",
                 "t",
                 "t"
             ],
@@ -767,6 +805,7 @@
             ],
             "when": "calva:connected"
         },
+        // Portal
         {
             "before": [
                 "leader",
@@ -781,6 +820,7 @@
             ],
             "when": "calva:connected"
         },
+        // Formatting
         {
             "before": [
                 "leader",
@@ -958,8 +998,7 @@
     "vim.visualModeKeyBindings": [
         {
             "before": [
-                "leader",
-                "m",
+                ",",
                 "e",
                 "r"
             ],
