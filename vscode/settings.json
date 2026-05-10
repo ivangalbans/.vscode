@@ -389,7 +389,7 @@
             "commands": [
                 "editor.action.goToReferences"
             ]
-        }
+        },
         // windows
         {
             "before": [
@@ -1132,7 +1132,7 @@
     "workbench.layoutControl.type": "menu",
     "workbench.secondarySideBar.defaultVisibility": "hidden",
     "workbench.sideBar.location": "left",
-    "workbench.statusBar.visible": false,
+    "workbench.statusBar.visible": true,
     "workbench.tree.renderIndentGuides": "none",
     "projectManager.showProjectNameInStatusBar": false
 }
