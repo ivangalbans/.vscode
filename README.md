@@ -144,6 +144,14 @@ Leader key: `<space>`
 | --------- | ---------- |
 | Clear all | `SPC n q`  |
 
+#### Navigation & Search
+| Keybinding | Action                |
+| ---------- | --------------------- |
+| `SPC s p`  | Toggle search sidebar |
+| `SPC c d`  | Go to definition      |
+| `SPC c a`  | Navigate back         |
+| `SPC c D`  | Show all references   |
+
 #### Open
 
 | Command        | Keybinding |
@@ -170,6 +178,15 @@ Vim-style file browser.
 | Parent dir | `-`          |
 | Refresh    | `CTRL+l`     |
 | Change dir | `ALT+\``     |
+
+### REST Client - Key Commands (Setup recomendado)
+
+| Keybinding (Vim leader) | Comando                          | Acción                          |
+| ----------------------- | -------------------------------- | ------------------------------- |
+| `<leader> m e`          | `rest-client.request`            | Ejecutar request bajo el cursor |
+| `<leader> m r`          | `rest-client.rerun-last-request` | Repetir último request          |
+| `<leader> m c`          | `rest-client.cancel-request`     | Cancelar request en ejecución   |
+| `<leader> m s`          | `rest-client.switch-environment` | Cambiar environment activo      |
 
 ### Git (Edamagit)
 
